@@ -30,7 +30,7 @@ const API_URL = "https://api.sheetbest.com/sheets/193f6c1f-a255-4b91-90c4-22adf8
 function convertDriveLink(url) {
   if (!url) return "";
   const match = url.match(/\/d\/(.*?)\//);
-  return match ? `https://drive.google.com/uc?export=view&id=${match[1]}`: url;
+  return match ? "https://drive.google.com/uc?export=view&id=${match[1]}": url;
 }
 
 fetch(API_URL)
@@ -87,3 +87,4 @@ function order(name) {
 </script>
 </body>
 </html>
+
